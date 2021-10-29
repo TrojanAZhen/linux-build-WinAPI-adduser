@@ -8,7 +8,7 @@ Password: `Test123456789!` (this should be good enough to fit most password poli
 This standalone piece code can run in many contexts:
 - As a command-line EXE.
 - As a DLL (the user will be created on DLL load). This is useful to exploit "DLL Preloading" issues.
-- As a DLL, through `rundll32.exe adduser.dll,CreateAdminUser`. This is useful to bypass mandatory code signing applied to EXE files only.
+- As a DLL, requires admin rights through `rundll32.exe adduser.dll,CreateAdminUser`. This is useful to bypass mandatory code signing applied to EXE files only.
 
 ## Compiling
 ### Using MinGW (tested on Linux)
