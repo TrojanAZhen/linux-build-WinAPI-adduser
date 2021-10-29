@@ -11,8 +11,10 @@ This standalone piece code can run in many contexts:
 - As a DLL, through `rundll32.exe adduser.dll,CreateAdminUser@16`. This is useful to bypass mandatory code signing applied to EXE files only.
 
 ## Compiling
-### Using MinGW (tested on macOS, but Linux should work)
+### Using MinGW (tested on Linux)
 
+- Linux安装gcc包:
+`sudo apt install gcc-mingw-w64 -y`
 - Create a 32-bit EXE file:
 `i686-w64-mingw32-gcc -oadduser32.exe adduser.c -lnetapi32`
 - Create a 32-bit DLL file:
