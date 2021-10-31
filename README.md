@@ -30,7 +30,7 @@ This standalone piece code can run in many contexts:
 `cl.exe adduser.c /link /DEFAULTLIB:ADVAPI32 /DEFAULTLIB:NETAPI32`
 - Create a DLL file:
 `cl.exe adduser.c /LD /link /DEFAULTLIB:ADVAPI32 /DEFAULTLIB:NETAPI32`
-### 修改程序目录相对路径中的头文件
+### 修改引用相对路径中的头文件
 - `#include <xxx.h>`
 **改为**
 `#include "xxx.h"`
