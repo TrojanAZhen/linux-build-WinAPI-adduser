@@ -31,8 +31,13 @@ This standalone piece code can run in many contexts:
 - Create a DLL file:
 `cl.exe adduser.c /LD /link /DEFAULTLIB:ADVAPI32 /DEFAULTLIB:NETAPI32`
 ### 修改程序目录相对路径中的头文件
-`#include <xxx.h>`
-
+- `#include <xxx.h>`
 **改为**
-
 `#include "xxx.h"`
+### 头文件下载
+- [exefiles](https://www.exefiles.com/en/h/windows-h/)
+### 查看引用头文件位置
+- *C：*
+`gcc -print-prog-name=cc1 -v`
+- *C++：*
+`gcc -print-prog-name=cc1plus -v`
